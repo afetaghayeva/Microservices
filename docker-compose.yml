@@ -2,7 +2,7 @@ version: "3.1"
 
 services:
   s_api_gateway:
-    container_name: c_api_gateway
+    container_name: c_api_gateway_afet
     image: afetaghayeva/apigateway
     build:
       context: .
@@ -14,7 +14,7 @@ services:
       - int_net
 
   s_contact_api:
-    container_name: c_contact_api
+    container_name: c_contact_api_afet
     image: afetaghayeva/contactapi
     build:
       context: .
@@ -25,7 +25,7 @@ services:
       - int_net
 
   s_res_api:
-    container_name: c_res_api
+    container_name: c_res_api_afet
     image: afetaghayeva/resapi
     build:
       context: .
