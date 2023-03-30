@@ -5,7 +5,7 @@
       "DownstreamScheme": "http",
       "DownstreamHostAndPorts": [
         {
-          "Host": "c_res_api",
+          "Host": "c_res_api_afet",
           "Port": 7000
         }
       ],
@@ -17,7 +17,7 @@
       "DownstreamScheme": "http",
       "DownstreamHostAndPorts": [
         {
-          "Host": "c_contact_api",
+          "Host": "c_contact_api_afet",
           "Port": 8000
         }
       ],
