@@ -9,7 +9,7 @@ namespace Contact.Api
         public static void Main(string[] args)
         {
             var builder = WebApplication.CreateBuilder(args);
-            builder.WebHost.UseUrls("http://*:9000");
+            builder.WebHost.UseUrls("http://*:8000");
             // Add services to the container.
 
             builder.Services.AddControllers();

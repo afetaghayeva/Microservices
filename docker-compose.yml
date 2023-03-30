@@ -1,0 +1,48 @@
+version: "3.1"
+
+services:
+  s_api_gateway:
+    container_name: c_api_gateway
+    image: afetaghayeva/apigateway
+    build:
+      context: .
+      dockerfile: APIGateway/Dockerfile
+    ports:
+      - 70:70
+    networks:
+      - micro_net
+      - int_net
+
+  s_contact_api:
+    container_name: c_contact_api
+    image: afetaghayeva/contactapi
+    build:
+      context: .
+      dockerfile: Services/Contact.Api/Dockerfile
+    ports:
+      - 8000:8000
+    networks:
+      - int_net
+
+  s_res_api:
+    container_name: c_res_api
+    image: afetaghayeva/resapi
+    build:
+      context: .
+      dockerfile: Services/Reservation.Api/Dockerfile
+    ports:
+      - 7000:7000
+    networks:
+      - int_net
+
+
+
+
+
+networks:
+  int_net:
+    driver: overlay
+    internal: true
+  micro_net:
+    driver: bridge
+

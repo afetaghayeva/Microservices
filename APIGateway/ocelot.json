@@ -2,11 +2,11 @@
   "Routes": [
     {
       "DownstreamPathTemplate": "/{id}",
-      "DownstreamScheme": "https",
+      "DownstreamScheme": "http",
       "DownstreamHostAndPorts": [
         {
-          "Host": "localhost",
-          "Port": 44370
+          "Host": "c_res_api",
+          "Port": 7000
         }
       ],
       "UpstreamPathTemplate": "/r/{id}",
@@ -14,11 +14,11 @@
     },
     {
       "DownstreamPathTemplate": "/{id}",
-      "DownstreamScheme": "https",
+      "DownstreamScheme": "http",
       "DownstreamHostAndPorts": [
         {
-          "Host": "localhost",
-          "Port": 44390
+          "Host": "c_contact_api",
+          "Port": 8000
         }
       ],
       "UpstreamPathTemplate": "/c/{id}",
