@@ -41,7 +41,6 @@ services:
 
 networks:
   int_net:
-    driver: overlay
     internal: true
   micro_net:
     driver: bridge
