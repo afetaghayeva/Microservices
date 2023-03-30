@@ -1,0 +1,14 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>net7.0</TargetFramework>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <Nullable>enable</Nullable>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\..\ContactAPI\Contact.API.Infrastructure\Contact.API.Infrastructure.csproj" />
+    <ProjectReference Include="..\Reservation.API.Infrastructure\Reservation.API.Infrastructure.csproj" />
+  </ItemGroup>
+
+</Project>
